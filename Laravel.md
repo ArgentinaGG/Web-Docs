@@ -2,14 +2,14 @@
 
 ```sh
 cd /var/www/site/private
-sudo -u web36 ssh-keygen (copy .ssh/id_rsa.pub to Bitbucket settings)
-sudo -u web36 git clone git@bitbucket.org:xxx/yyy.git .
-sudo -u web36 cp .env.example .env
-sudo -u web36 composer install
+sudo -u web41 ssh-keygen (copy .ssh/id_rsa.pub to Bitbucket settings)
+sudo -u web41 git clone git@bitbucket.org:xxx/yyy.git .
+sudo -u web41 cp .env.example .env
+sudo -u web41 composer install
 php artisan key:generate
 
-sudo -u web36 ln -s /var/www/site/private/public/ /var/www/site/web/
-sudo -u web36 php artisan storage:link
+sudo -u web41 ln -s /var/www/site/private/public/ /var/www/site/web/
+sudo -u web41 php artisan storage:link
 ```
 
 ## Apache Directives (ISPConfig)
