@@ -11,6 +11,11 @@ php artisan key:generate
 sudo -u web41 ln -s /var/www/site/private/public/ /var/www/site/web/
 sudo -u web41 php artisan storage:link
 ```
+Different PHP Version for project:
+```sh
+sudo -u web41 php8.3 /usr/bin/composer install
+sudo -u web41 php8.3 artisan storage:link
+```
 
 ## Apache Directives (ISPConfig)
 DocumentRoot "{DOCROOT_CLIENT}/public"
