@@ -15,12 +15,11 @@ sudo -u web36 php artisan storage:link
 ## Apache Directives (ISPConfig)
 DocumentRoot "{DOCROOT_CLIENT}/public"
 
-# Composer
-https://getcomposer.org/download/
-
 # Install Laravel
 New Project
 ```sh
+composer create-project laravel/laravel dirnameproject
+
 php artisan migrate:fresh ; php artisan db:seed
 
 sudo -u web36 git pull
