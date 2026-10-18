@@ -16,10 +16,10 @@ sudo -u web36 php artisan storage:link
 DocumentRoot "{DOCROOT_CLIENT}/public"
 
 # Install Laravel
-New Project
 ```sh
 composer create-project laravel/laravel dirnameproject
-
+```
+```sh
 php artisan migrate:fresh ; php artisan db:seed
 
 sudo -u web36 git pull
