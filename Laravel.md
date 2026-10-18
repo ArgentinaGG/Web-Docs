@@ -2,7 +2,7 @@
 
 ```sh
 cd /var/www/site/private
-sudo -u web41 ssh-keygen (copy .ssh/id_rsa.pub to Bitbucket settings)
+sudo -u web41 ssh-keygen (copy .ssh/id_rsa.pub to Bitbucket or GitHub deploy keys)
 sudo -u web41 git clone git@bitbucket.org:xxx/yyy.git .
 sudo -u web41 cp .env.example .env
 sudo -u web41 composer install
