@@ -52,17 +52,13 @@ sudo echo > /var/www/site.com/.ssh/known_hosts
 sudo -u web115 ssh-keygen -R bitbucket.org && curl https://bitbucket.org/site/ssh >> /var/www/site.com/.ssh/known_hosts
 ```
 
-Clean CentOS Cache
+Git go back to last commit 
 ```sh
-yum clean all
-rm -rf /var/cache/yum/
+# 1. Discard changes to existing files
+git reset --hard HEAD
 
-# Remove orphan packages
-package-cleanup --quiet --leaves --exclude-bin
-package-cleanup --quiet --leaves --exclude-bin | xargs yum remove
-
-# Remove old kernels
-package-cleanup --oldkernels --count=2
+# 2. Remove any newly created untracked files and folders
+git clean -fd
 ```
 
 How do I force Git to overwrite local files on pull?
