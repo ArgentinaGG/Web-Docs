@@ -61,34 +61,9 @@ git reset --hard HEAD
 git clean -fd
 ```
 
-How do I force Git to overwrite local files on pull?
-```sh
-error: Your local changes to the following files would be overwritten by merge:
-error: The following untracked working tree files would be overwritten by merge:
-
-git fetch --all
-git reset --hard origin/master
-```
-
 Reset file changes
 ```sh
 git checkout -- file.xxx
-```
-
-Check HTTPS Certificate. Check invalid redirects.
-```sh
-curl -IvL https://domain.me
-```
-
-Email
-```sh
-mail -s "asunto ejemplo" your@email.com <<< "mensaje"
-```
-
-Delete queued mail
-```sh
-postqueue -p
-postsuper -d ALL
 ```
 
 show top 10 biggest subdirs in the current dir
@@ -133,11 +108,3 @@ Search repo rpm and delete (to solve yum conflicts)
 rpm -qa | grep -i repo-name
 rpm -e repo-name
 ```
-
-Composer 2 - Centos 7
-```sh
-cd /usr/bin
-https://getcomposer.org/download/
-sudo mv composer.phar /usr/bin/composer
-```
-sudo -u web135 composer install
